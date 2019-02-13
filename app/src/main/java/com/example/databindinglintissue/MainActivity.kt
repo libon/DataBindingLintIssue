@@ -10,5 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        // Use the following instead to not have a lint warning:
+        //DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
     }
 }
